@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="connect4.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="OptionMenu" class="menu">
+        <p id="difficulty">CPU Difficulty</p>
+        <p id="colors">Colors</p>
+    </div>
+    <div id="menu" class="menu">
+        <h1><span class="blue-text">Connect</span> <span class="red-text">4</span></h1>
+        <p>Continue game</p> 
+        <p id="singlePlayer">Player vs. CPU</p>
+        <p id="multiplayer">Player vs. Player</p>
+        <p id="tutorial">Tutorial</p>
+        <p id="options">Options</p>
+    </div>
+    <div id="board">
+        <!--I made these ids 0-indexed with y starting at the bottom because I thought it would be
+        easiest to map to how we'll keep track of the board in the code. Feel free to change them!-->
+        <div class="column" id="0">
+            <div class="circle" id="0-5"></div>
+            <div class="circle" id="0-4"></div>
+            <div class="circle" id="0-3"></div>
+            <div class="circle" id="0-2"></div>
+            <div class="circle" id="0-1"></div>
+            <div class="circle" id="0-0"></div>
+        </div>
+        <div class="column" id="1">
+            <div class="circle" id="1-5"></div>
+            <div class="circle" id="1-4"></div>
+            <div class="circle" id="1-3"></div>
+            <div class="circle" id="1-2"></div>
+            <div class="circle" id="1-1"></div>
+            <div class="circle" id="1-0"></div>
+        </div>
+        <div class="column" id="2">
+            <div class="circle" id="2-5"></div>
+            <div class="circle" id="2-4"></div>
+            <div class="circle" id="2-3"></div>
+            <div class="circle" id="2-2"></div>
+            <div class="circle" id="2-1"></div>
+            <div class="circle" id="2-0"></div>
+        </div>
+        <div class="column" id="3">
+            <div class="circle" id="3-5"></div>
+            <div class="circle" id="3-4"></div>
+            <div class="circle" id="3-3"></div>
+            <div class="circle" id="3-2"></div>
+            <div class="circle" id="3-1"></div>
+            <div class="circle" id="3-0"></div>
+        </div>
+        <div class="column" id="4">
+            <div class="circle" id="4-5"></div>
+            <div class="circle" id="4-4"></div>
+            <div class="circle" id="4-3"></div>
+            <div class="circle" id="4-2"></div>
+            <div class="circle" id="4-1"></div>
+            <div class="circle" id="4-0"></div>
+        </div>
+        <div class="column" id="5">
+            <div class="circle" id="5-5"></div>
+            <div class="circle" id="5-4"></div>
+            <div class="circle" id="5-3"></div>
+            <div class="circle" id="5-2"></div>
+            <div class="circle" id="5-1"></div>
+            <div class="circle" id="5-0"></div>
+        </div>
+        <div class="column" id="6">
+            <div class="circle" id="6-5"></div>
+            <div class="circle" id="6-4"></div>
+            <div class="circle" id="6-3"></div>
+            <div class="circle" id="6-2"></div>
+            <div class="circle" id="6-1"></div>
+            <div class="circle" id="6-0"></div>
+        </div>
+    </div>
+    <script src="connect4.js"></script>
+</body>
+</html>
